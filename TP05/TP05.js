@@ -1,7 +1,12 @@
 function point2D(x, y)
 {
+    if (x < 0 || y < 0) {
+        throw new Error(' X ou Y est négatif');
+    }
     this.attrX = x;
     this.attrY = y;
+
+
 
     this.afficherXY = function() {
         console.log('[', this.attrX, ',' , this.attrY, ']');
@@ -17,25 +22,32 @@ function point2D(x, y)
         console.log(this.attrY);
     };
     this.setX = function(x) {
-        this.attrX = x;
+        if (x < 0) {
+            throw new Error(' X est négatif');
+        } else {
+            this.attrX = x;
+        }
     };
     this.setY = function(y) {
-        this.attrY = y;
+        if (y < 0) {
+            throw new Error(' Y est négatif');
+        } else {
+            this.attrX = y;
+        }
     };
 }
 
 var point2D = new point2D(10, 5);
-point2D.afficherXY();
 
-point2D.translater(10, 5);
-
-console.log(point2D);
-point2D.setX(1);
-point2D.setY(5);
-console.log(point2D);
-
-point2D.getX();
-point2D.getY();
+try {
+    point2D.setY(-10);
+} catch(error) {
+    console.log("Une exception a été attrapée");
+    console.log("Nom de l'exception :" + error.name);
+    console.log("Message de l'exception :" + error.message);
+} finally {
+    console.log(point2D);
+}
 
 
 
