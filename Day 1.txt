@@ -1,0 +1,10 @@
+RENAUD FERRET
+renaud91@gmail.com cdnt10
+
+Client Git // SourceCodeManager SCM
+Serveur 
+Bitbucket 5max pour gratuit(éditeur jira attlassian) 
+Gitlab (ic intégration continue/ dc déploiement continuel)
+Github
+
+mysql // postgre
