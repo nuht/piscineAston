@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>page</title>
+</head>
+<body>
+  <h1>Réaliser le petit tableau suivant :</h1>
+  <form action="postForm.html">
+    <table  style="height:400px;border:1px
+  solid black;width:75%;">
+    <thead>
+      <tr>
+        <th>Type/Balise</th>
+        <th>Libelle</th>
+        <th>Champ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1px solid black;">file</td>
+        <td style="border:1px solid black;"><label for="1">Fichier</label></td>
+        <td style="border:1px solid black;"><input type="file" name="file" id="1"></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">hidden</td>
+        <td style="border:1px solid black;">Champ caché</td>
+        <td style="border:1px solid black;"><input type="hidden" name="hidden" value="testHidden"></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">password</td>
+        <td style="border:1px solid black;"><label for="3">Mot de passe</label></td>
+        <td style="border:1px solid black;"><input type="password" name="password" id="3"></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">text</td>
+        <td style="border:1px solid black;"><label for="4">Champ texte</label></td>
+        <td style="border:1px solid black;"><input type="text" name="champTexte" id="4"></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">button button</td>
+        <td style="border:1px solid black;">Bouton</td>
+        <td style="border:1px solid black;"><button>Yep</button></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">button reset</td>
+        <td style="border:1px solid black;">Bouton reset</td>
+        <td style="border:1px solid black;"><button type="reset">Reset</button></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">button submit</td>
+        <td style="border:1px solid black;">Bouton submit</td>
+        <td style="border:1px solid black;"><button type="submit">Faire un post</button></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">button submit avec image</td>
+        <td style="border:1px solid black;">Bouton image</td>
+        <td style="border:1px solid black;"><button><img src="confirm.jpg" alt=""></button></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">checkbox</td>
+        <td style="border:1px solid black;">Cases à cocher (non exclusifs)</td>
+        <td style="border:1px solid black;">
+          <input type="checkbox" value="test" id="10">
+          <label for="10">Choix 1</label>
+          <input type="checkbox" value="test" id="11">
+          <label for="11">Choix 2</label>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">radio</td>
+        <td style="border:1px solid black;">Boutons radio (exclusifs)</td>
+        <td style="border:1px solid black;">
+          <input type="radio" name="test" value="test0" id="test0">
+          <label for="test0">Choix 1</label>
+          <input type="radio" name="test" value="test" id="test">
+          <label for="test">Choix 2</label>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">select</td>
+        <td style="border:1px solid black;">Liste déroulante simple</td>
+        <td style="border:1px solid black;">
+          <select name="testSelect" id="15">
+            <option value="1">Choix 1</option>
+            <option value="2">Choix 2</option>
+            <option value="3">Choix 3</option>
+            <option value="4">Choix 4</option>
+        </select>
+      </td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">select</td>
+        <td style="border:1px solid black;">Liste</td>
+        <td style="border:1px solid black;">
+          <select name="selectMulti" id="selectMulti" multiple>
+            <option value="1">Choix 1</option>
+            <option value="2">Choix 2</option>
+            <option value="3">Choix 3</option>
+            <option value="4">Choix 4</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black;">text area</td>
+        <td style="border:1px solid black;">Champ de texte multi-lignes</td>
+        <td style="border:1px solid black;"><textarea placeholder="je suis super heureux" name="textArea" id="textArea" cols="30" rows="2"></textarea></td>
+      </tr>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Type/Balise</th>
+        <th>Libelle</th>
+        <th>Champ</th>
+      </tr>
+      
+    </tfoot>
+  </table>
+  </form>
+</body>
+</html>
