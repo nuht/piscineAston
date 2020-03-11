@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Liste de vos comptes.</title>
+		<!-- Attention : on n'est un crant en dessous dans la hierarchie des repertoires. -->
+		<link href="../css/banque.css" rel="stylesheet" />
+	</head>  
+
+	<body class="elbody">
+		<header>
+			<span>
+				<img src="../images/image-bienvenue.jpg" alt="" class="imhb" />
+			</span>
+		</header>
+		<section>
+			<h2>&nbsp;</h2>		
+			<form id="frmListeCompte" name="frmListeCompte" action="historique.html" method="get">		
+				<table class="center">
+					<caption>Liste de vos comptes sur Net Banque</caption>
+					<thead>
+						<tr>
+							<th>Num&eacute;ro</th>
+							<th>D&eacute;signation</th>
+							<th>Taux</th>
+							<th>D&eacute;couvert autoris&eacute;</th>
+							<th>Solde</th>
+						</tr>
+					</thead>
+					<tfoot></tfoot>
+					<tbody>
+						<tr class="elLigneTableau1">
+							<td class="center"><a href="javascript:frmListeCompte.submit()">1</a></td>
+							<td>Compte 1</td>
+							<td>--</td>
+							<td>200 Euros</td>
+							<td>20000 Euros</td>
+						</tr>
+						<tr class="elLigneTableau2">
+							<td class="center"><a href="javascript:frmListeCompte.submit()">2</a></td>
+							<td>Compte 2</td>
+							<td>--</td>
+							<td>10 Euros</td>
+							<td>120 Euros</td>
+						</tr>
+						<tr class="elLigneTableau1">
+							<td class="center"><a href="javascript:frmListeCompte.submit()">3</a></td>
+							<td>Compte 3</td>
+							<td>--</td>
+							<td>400 Euros</td>
+							<td>700 Euros</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<br/>
+			<div class="center">
+				<button type="button" class="menu" onclick="location.href = '../menu.html';"></button>
+			</div>
+		</section>
+	</body>
+</html>

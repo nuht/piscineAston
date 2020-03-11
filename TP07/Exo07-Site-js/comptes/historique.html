@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Historique de vos operations.</title>
+		<!-- Attention : on n'est un crant en dessous dans la hierarchie des repertoires. -->
+		<link href="../css/banque.css" rel="stylesheet" />
+		<link href="../css/datepicker.min.css" rel="stylesheet" />
+		<script src="../datepicker.min.js"></script>
+		<script src="../TP07Historique.js"></script>
+	</head>
+
+	<body class="elbody" >
+		<header>
+			<span>
+				<img src="../images/image-bienvenue.jpg" alt="" class="imhb" />
+			</span>
+		</header>
+
+		<section>
+			<header><h2 class="center">Historique de vos op&eacute;rations effectu&eacute;es sur le compte n&deg; 2</h2></header>
+			<form id="frmListeOperations" name="frmListeOperations" action="historique.html" method="get">
+				<table class="center jaune">
+					<caption>Crit&egrave;res de recherche :</caption>
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tfoot></tfoot>
+					<tbody>
+						<tr>
+							<td class="center">
+								<label for="inDateDebut">Du</label> <input type="text" id="inDateDebut" name="inDateDebut" value="" class="start"  autocomplete="off"/>&nbsp;&nbsp;
+								<label for="inDateFin">Au</label> <input type="text" name="inDateFin" id="inDateFin" value="" class="end"  autocomplete="off"/>
+							</td>
+							<td>
+								<label for="idcredit">Credit</label> 
+								<input type="checkbox" name="inCredit" id="idcredit" checked />
+								<br/>
+								<label for="iddebit">Debit</label> 
+								<input type="checkbox" name="inDebit" id="iddebit" checked />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<div class="center">
+					<button type="submit" class="rechercher"></button>
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h2>&nbsp;</h2>
+			<table class="center">
+				<caption>R&eacute;sultats :</caption>
+				<thead>
+					<tr>				
+						<th>Date</th>
+						<th>Libell&eacute;</th>
+						<th>Montant</th>
+					</tr>
+				</thead>
+				<tfoot></tfoot>
+				<tbody>
+					<tr class="elLigneTableau1">
+						<td>10/01/2000</td>
+						<td>Virement</td>
+						<td>200 Euros</td>
+					</tr>
+					<tr class="elLigneTableau2">
+						<td>10/01/2001</td>
+						<td>Virement</td>
+						<td>200 Euros</td>
+					</tr>
+
+					<tr class="elLigneTableau1">
+						<td>10/01/2002</td>
+						<td>Virement</td>
+						<td>200 Euros</td>
+					</tr>
+
+					<tr class="elLigneTableau2">
+						<td>10/01/2003</td>
+						<td>Virement</td>
+						<td>-156 Euros</td>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<div class="center">
+				<button type="button" class="listecomptes" onclick="location.href = 'liste.html';"></button>
+				<button type="button" class="menu" onclick="location.href = '../menu.html';"></button>
+			</div>
+			
+		</section>
+	</body>
+</html>

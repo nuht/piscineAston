@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>NET*Banque : Login</title>
+		<link href="css/banque.css" rel="stylesheet" />
+		<script src="TP07Login.js"></script>	
+		
+	</head>
+
+	<body class="elbody" style="width: 931px;">
+		<header>
+			<span>
+				<img src="images/image-femme.jpg" alt="" class="imd" />
+				<img src="images/titre.jpg" alt="" class="imh" />				
+			</span>
+		</header>
+		<section>
+			<h2>&nbsp;</h2>
+			<form 	id="frmLogin" name="frmLogin" action="menu.html" method="get">
+				<table class="center">
+					<thead></thead>
+					<tfoot></tfoot>
+					<tbody>
+						<tr>
+							<td colspan="2" class="center">Veuillez entrer votre nom d'utilisateur et votre mot de passe</td>
+						</tr>
+						<tr>
+							<td colspan="2" id="alert" class="center hide">Votre login ou votre password est vide</td>
+						</tr>
+						<tr>
+							<td><label for="idlogin">Nom d'utilisateur</label></td>
+							<td><input type="text" name="inLogin" id="idlogin" value="yls"/><span id="loginObl" style="display:none">*</span></td>
+						</tr>
+						<tr>
+							<td><label for="idpassword">Mot de passe</label></td>
+							<td><input type="password" name="inPass" id="idpassword" value="aston"/><span id="pwdObl" style="display:none">*</span></td>
+						</tr>
+						<tr>
+							<td colspan="2" class="center">
+								<button type="submit" class="valider"></button>
+							</td>
+						</tr>
+					</tbody>					
+				</table>
+			</form>
+		</section>
+	</body>
+</html>

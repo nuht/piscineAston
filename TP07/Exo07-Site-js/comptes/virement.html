@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Gestion des Virements</title>
+		<!-- Attention : on n'est un crant en dessous dans la hierarchie des repertoires. -->
+		<link href="../css/banque.css" rel="stylesheet" />
+		<script src="../TP07Virement.js"></script>
+	</head>
+
+	<body class="elbody" >
+		<header>
+			<span>
+				<img src="../images/image-bienvenue.jpg" alt="" class="imhb" />
+			</span>
+		</header>
+		<section>
+			<h2>&nbsp;</h2>
+			<form id="frmListeOperations" name="frmVirements" action="#" method="get">
+				<table class="center">
+					<thead></thead>
+					<tfoot></tfoot>
+					<tbody>
+						<tr>
+							<td><img src="../images/puce.gif" alt=""/>&nbsp;<label for="inCmptEme">Comptes &eacute;metteurs</label></td>
+							<td>
+								<select name="inCmptEme" id="inCmptEme">
+									<option value="">&nbsp;&nbsp;&nbsp;--&nbsp;Choix&nbsp;--&nbsp;&nbsp;&nbsp;</option>
+									<option value="1">Compte 1</option>
+									<option value="2">Compte 2</option>
+									<option value="3">Compte 3</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="../images/puce.gif" alt=""/>&nbsp;<label for="inCmptDes">Comptes destinataires</label></td>
+							<td>
+								<select name="inCmptDes" id="inCmptDes">
+									<option value="">&nbsp;&nbsp;&nbsp;--&nbsp;Choix&nbsp;--&nbsp;&nbsp;&nbsp;</option>
+									<option value="1">Compte 1</option>
+									<option value="2">Compte 2</option>
+									<option value="3">Compte 3</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="../images/puce.gif" alt=""/>&nbsp;<label for="inMontant">Montant du virement</label></td>
+							<td><input type="number" step="any" name="inMontant" id="inMontant" value="0.0" size="12"/></td>
+						</tr>
+						<tr>
+							<td colspan="2" id="alert" class="center hide"></td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<div class="center">
+					<button type="submit" class="valider"></button>
+					<button type="button" class="annuler" onclick="location.href = '../menu.html';"></button>
+				</div>
+			</form>
+		</section>
+	</body>
+</html>
