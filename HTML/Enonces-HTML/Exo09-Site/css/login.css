@@ -1,0 +1,43 @@
+* {
+    box-sizing: content-box;
+    width: 100%;
+}
+
+body {
+    width: 931px;
+    height: 1000px;
+}
+
+#women {
+    background-image: url("../images/image-femme.jpg");
+    float: left;
+    height: 573px;
+    width: 131px;
+}
+
+#welcome {
+    background-image: url("../images/titre.jpg");
+    height: 98px;
+    float: left;
+    width: 800px;
+}
+
+#loginContainer {
+    height: 1000px;
+}
+
+#login {
+    width: 60%;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+#buttonSubmit {
+    width: 98px;
+    height: 33px;
+    border: 0;
+}
+
+#paddingTest {
+    height: 200px;
+}
