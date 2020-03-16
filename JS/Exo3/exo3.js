@@ -2,11 +2,11 @@ var app = {
     init: function() {
         console.log('init');
         
-        var inputCity = document.getElementById('citySearch');
-        inputCity.addEventListener('keyup', app.searchAndShowCities);
+        app.inputCity = document.getElementById('citySearch');
+        app.inputCity.addEventListener('keyup', app.searchAndShowCities);
 
-        var select = document.getElementById('select');
-        select.addEventListener('click', app.showCityPop);
+        app.select = document.getElementById('select');
+        app.select.addEventListener('click', app.showCityPop);
     },
 
     searchAndShowCities: function() {
@@ -22,29 +22,26 @@ var app = {
         app.result = [];
         var count = 0;
 
-        var inputCity = document.getElementById('citySearch');
-        inputCityValue = inputCity.value;
+        app.inputCityValue = app.inputCity.value;
 
-        var result = document.getElementById('result');
-        result.innerHTML = '';
-
-        console.log(inputCityValue);
+        app.result = document.getElementById('result');
+        app.result.innerHTML = '';
 
         var select = document.getElementById('select');
         select.innerHTML = '';
 
         for(var city of app.cities)
         {
-            if (city.name.startsWith(inputCityValue)) {
+            if (city.name.startsWith(app.inputCityValue)) {
 
-                select.classList.remove('hide');
-                select.classList.add('show');
+                app.select.classList.remove('hide');
+                app.select.classList.add('show');
                 console.log('match');
                 app.result[count] = city;
 
                 var option = document.createElement('option');
                 option.innerHTML = city.name;
-                select.appendChild(option);
+                app.select.appendChild(option);
             
                 count++;
             }
@@ -54,19 +51,14 @@ var app = {
 
     showCityPop: function() {
         console.log(app.result);
-        var inputCity = document.getElementById('citySearch');
-        inputCity.value = '';
-        var result = document.getElementById('result');
-        var select = document.getElementById('select');
+        app.inputCity.value = '';
 
         for(var city of app.cities)
         {
-            if (select.value == city.name) {
-                result.innerHTML = city.population;
+            if (app.select.value == city.name) {
+                app.result.innerHTML = city.population;
             }
         }
-
-        console.log(select.value);
     }
 
 };
