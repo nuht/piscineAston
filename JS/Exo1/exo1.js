@@ -18,7 +18,7 @@ var app = {
         div = document.getElementById('write');
 
         for(i = 0; i < selectVal; i++) {
-            div.innerHtml += ' ' + String(inputVal);
+            div.innerText += ' ' + String(inputVal);
         }
     }
 };
