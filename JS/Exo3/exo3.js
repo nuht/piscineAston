@@ -3,13 +3,13 @@ var app = {
         console.log('init');
         
         app.inputCity = document.getElementById('citySearch');
-        app.inputCity.addEventListener('keyup', app.searchAndShowCities);
+        app.inputCity.addEventListener('keyup', app.searchAndShowCitiesInSelect);
 
         app.select = document.getElementById('select');
         app.select.addEventListener('click', app.showCityPop);
     },
 
-    searchAndShowCities: function() {
+    searchAndShowCitiesInSelect: function() {
         app.cities = [
             { name: 'Paris', population: 2187526 },
             { name: 'Perpignan', population: 121875 },
