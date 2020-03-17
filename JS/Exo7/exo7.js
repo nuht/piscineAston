@@ -47,11 +47,11 @@ var app = {
             headers: { "Content-Type": "application/json; charset=utf-8" },
             method: 'POST',
             body: JSON.stringify({
-            player: {
-                firstname: firstName,
-                lastname: lastName,
-                team: team,
-                position: position,
+                player: {
+                    firstname: firstName,
+                    lastname: lastName,
+                    team: team,
+                    position: position,
                 }
             })
         })
@@ -65,6 +65,7 @@ var app = {
 
     refreshList: function() {
         clearInterval(app.intervalID);
+        console.log('refresh');
         app.intervalID = window.setInterval(app.getJsonAjax, 60000);
     }
 
