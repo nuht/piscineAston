@@ -59,7 +59,7 @@ var app = {
         //     app.getJsonAjax();
         // })
         .then(response => {
-            response => app.getJsonAjax();
+            app.getJsonAjax();
         })
     },
 
