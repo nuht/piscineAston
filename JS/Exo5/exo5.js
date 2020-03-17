@@ -64,7 +64,8 @@ var app = {
                 count++;
             }
         }
-        var rand = Math.round(Math.random() * randTab.length);
+
+        var rand = Math.round(Math.random() * randTab.length - 1);
         var h1 = document.getElementById('currentQuote');
         h1.innerHTML = randTab[rand];
     }
